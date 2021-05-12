@@ -115,6 +115,8 @@ li {
 }
 
 .adres-el {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: var(--adrec-el-color);
   font-family: Roboto;
@@ -124,29 +126,8 @@ li {
   letter-spacing: 0.03em;
 }
 
-.adrec-icons-svg-envelope {
-  color: var(--adrec-el-color);
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  width: 16px;
-  height: 12px;
+.adrec-icons-svg {
   margin-right: 5px;
-  cursor: pointer;
-  background-size: contain;
-  fill: currentColor;
-}
-
-.adrec-icons-svg-smartphone {
-  color: var(--adrec-el-color);
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  width: 10px;
-  height: 16px;
-  margin-right: 5px;
-  cursor: pointer;
-  background-size: contain;
   fill: currentColor;
 }
 
@@ -216,7 +197,6 @@ li {
 
 .sector-specific {
   display: flex;
-  background-color: var(--border-bottom-color);
   padding-top: 94px;
 }
 
@@ -231,6 +211,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 4px;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -277,7 +258,6 @@ li {
 /*секція роботи*/
 
 .work {
-  background-color: var(--work-bg-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -423,8 +403,6 @@ li {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 106px;
-  height: 60px;
   fill: currentColor;
 }
 
