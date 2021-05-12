@@ -12,6 +12,7 @@ html {
   --work-bg-color: #e5e5e5;
   --sector-bg-color: #f5f4fa;
   --fanc-br-color: #eeeeee;
+  --social-icon-color: #afb1b8;
 }
 
 *,
@@ -123,8 +124,42 @@ li {
   letter-spacing: 0.03em;
 }
 
+.adrec-icons-svg-envelope {
+  color: var(--adrec-el-color);
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  width: 16px;
+  height: 12px;
+  margin-right: 5px;
+  cursor: pointer;
+  background-size: contain;
+  fill: currentColor;
+}
+
+.adrec-icons-svg-smartphone {
+  color: var(--adrec-el-color);
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  width: 10px;
+  height: 16px;
+  margin-right: 5px;
+  cursor: pointer;
+  background-size: contain;
+  fill: currentColor;
+}
+
 .adres-el:hover,
-.adres-el:focus {
+.adres-el:focus,
+.adrec-icons-svg-envelope:hover,
+.adrec-icons-svg-envelope:focus,
+.adrec-icons-svg-smartphone:hover,
+.adrec-icons-svg-smartphone:focus,
+.customer-icons-link:focus,
+.customer-icons-link:hover,
+.customer-icons-svg:hover,
+.customer-icons-svg:focus {
   color: var(--web-color);
 }
 
@@ -134,6 +169,23 @@ li {
   background-color: var(--title-bg-color);
   text-align: center;
   padding: 200px 0;
+}
+
+.overlane {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/tatle-mig.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .title {
@@ -173,6 +225,26 @@ li {
   width: 1200px;
   align-items: center;
   padding: 0px 15px;
+}
+
+.specific-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--sector-bg-color);
+}
+
+.social-icons-svg {
+  width: 70px;
+  height: 70px;
+  border-radius: 4px;
+  fill: rgba(245, 244, 250, 1);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .specific-ul {
@@ -280,6 +352,82 @@ li {
   font-size: 16px;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px 0px 32px;
+}
+
+.social-icons-item {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.social-icons-svg-comando {
+  fill: var(--social-icon-color);
+}
+
+.social-icons-svg-comando:hover .social-icons-svg-comando:focus {
+  fill: var(---title-color);
+}
+
+.social-icons-item:hover,
+.social-icons-item:focus {
+  background-color: var(--web-color);
+  color: var(--title-color);
+}
+
+/*клієнська база*/
+
+.customer-base {
+  padding: 94px 0;
+}
+
+.client {
+  color: var(--main-br-color);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.customer-icons {
+  display: flex;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.customer-icons-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customer-icons-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  cursor: pointer;
+  color: #afb1b8;
+}
+
+.customer-icons-svg {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
 /* сектор підвал*/
 
 .footer {
@@ -291,6 +439,8 @@ li {
   margin: 0 auto;
   padding: 0 15px;
   width: 1200px;
+}
+.footer-dark {
 }
 
 .web-footer {
@@ -306,6 +456,50 @@ li {
 
 .footer-li:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.social-footer {
+  display: block;
+  align-items: center;
+  justify-content: left;
+  margin-left: 70px;
+}
+
+.social-top-footer {
+  margin: 0;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+.social-icons-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer-social-icons-item {
+  margin-right: 10px;
+}
+
+.footer-social-icons-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+
+.footer-social-icons-svg {
+  fill: var(--title-color);
+  margin: 0;
 }
 
 .adres {
