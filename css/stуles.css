@@ -344,13 +344,17 @@ li {
 }
 
 .social-icons-link {
-  fill: var(--social-icon-color);
+  color: var(--social-icon-color);
 }
 
 .social-icons-link:hover,
 .social-icons-link:focus {
   background-color: var(--web-color);
   color: var(--title-color);
+}
+
+.social-icons-svg-comando {
+  fill: currentColor;
 }
 
 /*клієнська база*/
@@ -416,6 +420,8 @@ li {
 }
 
 .footer-conteiner {
+  display: flex;
+  align-items: baseline;
   margin: 0 auto;
   padding: 0 15px;
   width: 1200px;
@@ -444,15 +450,12 @@ li {
 }
 
 .social-footer {
-  display: block;
-  align-items: center;
-  justify-content: left;
   margin-left: 70px;
 }
 
 .social-top-footer {
   margin: 0;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -480,6 +483,11 @@ li {
   justify-content: center;
   width: 44px;
   height: 44px;
+}
+
+.footer-social-icons-link:focus,
+.footer-social-icons-link:hover {
+  background-color: var(--web-color);
 }
 
 .footer-social-icons-svg {
