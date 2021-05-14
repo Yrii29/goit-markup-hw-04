@@ -136,11 +136,7 @@ li {
 .adrec-icons-svg-envelope:hover,
 .adrec-icons-svg-envelope:focus,
 .adrec-icons-svg-smartphone:hover,
-.adrec-icons-svg-smartphone:focus,
-.customer-icons-link:focus,
-.customer-icons-link:hover,
-.customer-icons-svg:hover,
-.customer-icons-svg:focus {
+.adrec-icons-svg-smartphone:focus {
   color: var(--web-color);
 }
 
@@ -338,23 +334,21 @@ li {
   padding: 16px 32px 0px 32px;
 }
 
-.social-icons-item {
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
   border-radius: 50%;
 }
 
-.social-icons-svg-comando {
+.social-icons-link {
   fill: var(--social-icon-color);
 }
 
-.social-icons-svg-comando:hover .social-icons-svg-comando:focus {
-  fill: var(---title-color);
-}
-
-.social-icons-item:hover,
-.social-icons-item:focus {
+.social-icons-link:hover,
+.social-icons-link:focus {
   background-color: var(--web-color);
   color: var(--title-color);
 }
@@ -399,6 +393,14 @@ li {
   color: #afb1b8;
 }
 
+.customer-icons-link:focus,
+.customer-icons-link:hover,
+.customer-icons-svg:hover,
+.customer-icons-svg:focus {
+  color: var(--web-color);
+  border-color: var(--web-color);
+}
+
 .customer-icons-svg {
   display: inline-flex;
   justify-content: center;
@@ -419,6 +421,7 @@ li {
   width: 1200px;
 }
 .footer-dark {
+  margin: 0;
 }
 
 .web-footer {
@@ -430,6 +433,10 @@ li {
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
+}
+
+.footer-ul {
+  padding-right: 0;
 }
 
 .footer-li:not(:last-child) {
@@ -542,6 +549,7 @@ button:hover,
 button:focus {
   color: var(--title-color);
   background-color: var(--web-color);
+  box-shadow: currentColor;
 }
 
 /*початок основи портфоліо*/
@@ -565,6 +573,16 @@ button:focus {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 27px;
   margin-bottom: 30px;
+}
+
+.function-portfolio-adres {
+  display: block;
+  text-decoration: none;
+}
+
+.function-portfolio-adres:hover,
+.function-portfolio-adres:focus {
+  box-shadow: currentColor;
 }
 
 .cart {
